@@ -3,9 +3,7 @@ numbers = 0
 lower = 0
 upper = 0
 a = (input("Введите свой пароль: "))
-print(a)
 b = len(a)
-print(b)
 if "1" in a:
     numbers = 10
 if "2" in a:
@@ -131,7 +129,6 @@ if "Y" in a:
 if "Z" in a:
     upper = 26
 Number_of_Possible_Combinations = (numbers + lower + upper) ** b
-print(Number_of_Possible_Combinations)
 Entropy = math.log2(Number_of_Possible_Combinations)
 print(str(Entropy) + " бит энтропии")
 ENG = 2 ** (Entropy - 1)
